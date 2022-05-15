@@ -15,8 +15,12 @@ public class Server {
 
             Thread.sleep(3000);
             DataOutputStream dout=new DataOutputStream(s.getOutputStream());
-            dout.writeUTF("B3d mnnni ! decrease me there");
-            dout.flush();
+            dout.writeUTF("B3d mnnni ! x1");
+            //dout.flush();
+
+            Thread.sleep(2000);
+            dout.writeUTF("B3d mnnni ! x2");
+            //dout.flush();
             dout.close();
 
             ss.close();
